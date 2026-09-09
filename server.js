@@ -669,7 +669,7 @@ app.get("/materiales", verificarToken, (req, res) => {
     });
 });
 
-const PUERTO = process.env.PORT || 3000;
-app.listen(PUERTO, () => {
-    console.log(`Servidor en el puerto ${PUERTO}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Servidor en el puerto ${PORT}`);
 });
