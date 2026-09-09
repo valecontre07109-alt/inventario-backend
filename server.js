@@ -1,5 +1,5 @@
 const express = require("express");
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const QRCode = require("qrcode");
@@ -669,7 +669,7 @@ app.get("/materiales", verificarToken, (req, res) => {
     });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Servidor en el puerto ${PORT}`);
+const PUERTO = process.env.PORT || 3000;
+app.listen(PUERTO, () => {
+    console.log(`Servidor en el puerto ${PUERTO}`);
 });
