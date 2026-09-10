@@ -1,9 +1,10 @@
 {
-  "name": "inventario-escolar-backend",
+  "name": "inventario_api",
   "version": "1.0.0",
   "description": "Backend del Inventario Escolar INFRAMEN - API para materiales, prestamos, permisos y reportes",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\"&& exit 1",
     "start": "node server.js"
   },
   "engines": {
